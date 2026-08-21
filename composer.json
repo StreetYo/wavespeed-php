@@ -1,0 +1,48 @@
+{
+    "name": "wavespeedai/wavespeed-php",
+    "description": "WaveSpeed PHP Client — Official PHP SDK for the WaveSpeed inference platform",
+    "type": "library",
+    "keywords": ["wavespeed", "ai", "inference", "image-generation", "video-generation", "sdk", "api-client"],
+    "homepage": "https://wavespeed.ai",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WaveSpeedAI",
+            "email": "support@wavespeed.ai",
+            "homepage": "https://wavespeed.ai"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/WaveSpeedAI/wavespeed-php/issues",
+        "source": "https://github.com/WaveSpeedAI/wavespeed-php",
+        "docs": "https://wavespeed.ai/docs/"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "phpstan/phpstan": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WaveSpeed\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WaveSpeed\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "stan": "phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

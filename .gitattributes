@@ -1,0 +1,15 @@
+* text=auto eol=lf
+
+*.php diff=php
+*.svg binary
+
+# Keep development-only files out of the Composer dist archive.
+/.editorconfig     export-ignore
+/.gitattributes    export-ignore
+/.github/          export-ignore
+/.gitignore        export-ignore
+/CLAUDE.md         export-ignore
+/examples/         export-ignore
+/phpstan.neon.dist export-ignore
+/phpunit.xml.dist  export-ignore
+/tests/            export-ignore
